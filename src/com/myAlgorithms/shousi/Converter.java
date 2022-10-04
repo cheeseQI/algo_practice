@@ -1,4 +1,4 @@
-package com.myAlgorithms;
+package com.myAlgorithms.shousi;
 
 public class Converter {
     String input;

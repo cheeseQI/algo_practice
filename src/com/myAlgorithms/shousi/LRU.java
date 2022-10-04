@@ -1,4 +1,4 @@
-package com.myAlgorithms;
+package com.myAlgorithms.shousi;
 
 import java.util.HashMap;
 import java.util.Map;

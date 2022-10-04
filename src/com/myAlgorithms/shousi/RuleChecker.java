@@ -1,4 +1,4 @@
-package com.myAlgorithms;
+package com.myAlgorithms.shousi;
 
 public abstract class RuleChecker {
     final RuleChecker next;

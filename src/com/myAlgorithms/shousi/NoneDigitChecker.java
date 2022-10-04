@@ -1,4 +1,4 @@
-package com.myAlgorithms;
+package com.myAlgorithms.shousi;
 
 public class NoneDigitChecker extends RuleChecker{
     public NoneDigitChecker(RuleChecker next) {

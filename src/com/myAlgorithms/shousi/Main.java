@@ -1,21 +1,13 @@
-package com.myAlgorithms;
-import com.myAlgorithms.array.algo;
-import com.myAlgorithms.array.quickSort;
+package com.myAlgorithms.shousi;
+import com.myAlgorithms.array.*;
 
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        algo test = new algo();
-        test.findFirstChararcter("aabbcded");
-        test.findFirstChararcter("abbbc"); // print (a, 0)
-        test.findFirstChararcter("aauiui");
-        quickSort s = new quickSort();
-        int[] in = new int[] {3, 2, 1};
-        s.sort(in, 0, 2);
-        for (int el: in) {
-            System.out.println(el);
-        }
+        getRoadLights test = new getRoadLights();
+        int[] res = test.getNums(new int[][]{{1, 3}, {4, 7}, {5, 6}}, new int[]{2,5});
+        System.out.println(res);
     }
 }
 
