@@ -1,13 +1,13 @@
 package com.myAlgorithms.shousi;
 import com.myAlgorithms.array.*;
+import com.myAlgorithms.string.StringChain;
 
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        getRoadLights test = new getRoadLights();
-        int[] res = test.getNums(new int[][]{{1, 3}, {4, 7}, {5, 6}}, new int[]{2,5});
-        System.out.println(res);
+        StringChain test = new StringChain();
+        System.out.println(test.getLongestChainLength(new String[] {"bear", "a", "and", "an", "andi"}));
     }
 }
 

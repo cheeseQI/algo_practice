@@ -18,6 +18,7 @@ public class findXMatrix {
         int[][]lRDown = leftRightDown(matrix,N,M); // 同理对 左下 右下
         return merge(lRUp, lRDown, N, M);
     }
+
     private int[] merge(int[][] leftUp, int[][] rightDown, int N, int M){
         int largestLength = 0;
         int res[] = new int[] {0, 0};
