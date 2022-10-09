@@ -1,13 +1,14 @@
 package com.myAlgorithms.shousi;
 import com.myAlgorithms.array.*;
 import com.myAlgorithms.string.StringChain;
+import com.myAlgorithms.string.permutationOfNum;
 
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        StringChain test = new StringChain();
-        System.out.println(test.getLongestChainLength(new String[] {"bear", "a", "and", "an", "andi"}));
+        permutationOfNum test = new permutationOfNum();
+        System.out.println(test.checkPermutation("1 45 72 55 115",  "46 1 73 57 115"));
     }
 }
 
