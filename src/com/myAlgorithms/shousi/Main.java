@@ -7,8 +7,8 @@ import com.myAlgorithms.string.permutationOfNum;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        permutationOfNum test = new permutationOfNum();
-        System.out.println(test.checkPermutation("1 45 72 55 115",  "46 1 73 57 115"));
+        UF test = new UF();
+        test.friendUF(new String[]{"Friend", "Friend", "Total"}, new int[]{0, 2, 2}, new int[] {1, 1, 1});
     }
 }
 
