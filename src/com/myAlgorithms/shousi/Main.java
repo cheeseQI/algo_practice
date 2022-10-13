@@ -7,8 +7,9 @@ import com.myAlgorithms.string.permutationOfNum;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        UF test = new UF();
-        test.friendUF(new String[]{"Friend", "Friend", "Total"}, new int[]{0, 2, 2}, new int[] {1, 1, 1});
+        EnhancedHashMap test = new EnhancedHashMap();
+        System.out.println(test.applyMapAndGetSum(new String[]{"insert", "addToValue", "get", "insert", "addToKey", "addToValue", "get"},
+                new int[][] {{1, 2}, {2}, {1}, {2, 3}, {1}, {-1}, {3}}));
     }
 }
 
