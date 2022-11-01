@@ -1,5 +1,8 @@
 package com.myAlgorithms.shousi;
 import com.myAlgorithms.array.*;
+import com.myAlgorithms.dp.BinaryGroupMax;
+import com.myAlgorithms.dp.MostTransaction;
+import com.myAlgorithms.dp.PaliPairs;
 import com.myAlgorithms.string.StringChain;
 import com.myAlgorithms.string.permutationOfNum;
 
@@ -7,9 +10,8 @@ import com.myAlgorithms.string.permutationOfNum;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        EnhancedHashMap test = new EnhancedHashMap();
-        System.out.println(test.applyMapAndGetSum(new String[]{"insert", "addToValue", "get", "insert", "addToKey", "addToValue", "get"},
-                new int[][] {{1, 2}, {2}, {1}, {2, 3}, {1}, {-1}, {3}}));
+        MostTransaction test = new MostTransaction();
+        System.out.println(test.getMost(new int[]{3, 2, -5, -6, -1, 4}));
     }
 }
 

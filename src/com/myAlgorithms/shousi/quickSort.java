@@ -1,4 +1,6 @@
-package com.myAlgorithms.array;
+package com.myAlgorithms.shousi;
+
+import java.util.Random;
 
 public class quickSort {
     public int[] sort(int[] nums, int left, int right) {
@@ -11,23 +13,19 @@ public class quickSort {
     }
 
     private int partition(int[] arr, int left, int right) {
-        int pivot = left;
-        int l = 1 + left;
-        int r = right;
-        while (l <= r) {
-            while (l < right && arr[l] <= arr[pivot]) {
-                l ++;
+        int randomIndex = new Random().nextInt(right - left + 1) + left;
+        swap(arr, left, randomIndex);
+        int lt = left;
+        int pivot = arr[lt];
+        //  lt lt lt lt P gt gt gt
+        for (int i = left + 1; i <= right; i ++) {
+            if (arr[i] < pivot) {
+                lt ++;
+                swap(arr, lt, i);
             }
-            while (r > left && arr[r] > arr[pivot]) {
-                r --;
-            }
-            if (l >= r) {
-                break;
-            }
-            swap(arr, l, r);
         }
-        swap(arr, pivot, r);
-        return r;
+        swap(arr, lt, left); // swap pivot with leftmost lt
+        return lt;
     }
 
     public void swap(int[] nums, int i, int j) {
